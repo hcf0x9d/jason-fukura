@@ -1,0 +1,33 @@
+.pipedKeywords {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  align-items: center;
+
+  @include phone() {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  & li {
+    list-style-type: none;
+    display: flex;
+
+    &::after {
+      content: "|";
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-size: 1.414rem;
+      padding: 0 10px;
+
+      @include phone() {
+        display: none;
+      }
+    }
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+}

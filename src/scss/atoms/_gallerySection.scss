@@ -1,0 +1,135 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-item {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @include phone() {
+      flex-direction: column;
+      height: 30rem;
+    }
+
+    &-image {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+
+      @include phone() {
+        width: 100%;
+      }
+
+      & img {
+        width: 55vw;
+        position: absolute;
+        bottom: 0;
+        transition: transform 0.25s ease;
+
+        @include phone() {
+          width: 100%;
+        }
+
+      }
+      &:hover {
+        & img {
+          transform: translateY(0) !important;
+        }
+      }
+    }
+    &-content {
+      width: 50%;
+      margin-left: 50%;
+      padding: 0 4rem;
+      position: relative;
+      z-index: 1;
+
+      @include phone() {
+        width: 100%;
+        margin-left: 0;
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+      }
+    }
+
+    &.mod-even {
+      & .gallery-item-image {
+        left: auto;
+        right: 0;
+        width: 50%;
+
+        @include phone() {
+          width: 100%;
+        }
+
+        & img {
+          right: 0;
+        }
+      }
+
+      & .gallery-item-content {
+        margin-left: 0;
+      }
+    }
+
+    &:last-of-type {
+      height: 70vh;
+
+      @include phone() {
+        height: 34rem;
+      }
+
+      & .gallery-item-image {
+        & img {
+          bottom: auto;
+          top: 0;
+
+          @include phone() {
+            bottom: 0;
+            top: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.metaList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  &-item {
+    & .tag {
+      padding: 2px 10px;
+      border-radius: 8px;
+      background: $gray-2;
+      color: $gray-1;
+      font-weight: 400;
+      font-size: 0.8rem;
+
+      @include phone() {
+        font-size: 0.75rem;
+        padding: 0 7px;
+      }
+    }
+
+    & + .metaList-item {
+      margin-left: 1rem;
+      @include phone() {
+        margin-left: 10px;
+      }
+    }
+  }
+}

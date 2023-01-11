@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@use "sass:math";
+
+@mixin phone {
+  @media (max-width: #{$md-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$md-width}) and (max-width: #{$lg-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$lg-width}) and (max-width: #{$xl-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop-hi {
+  @media (min-width: #{$xl-width}) and (max-width: #{$hd-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin hd {
+  @media (min-width: #{$hd-width}) {
+    @content;
+  }
+}
+
+@mixin gradient-background ( $start-color, $end-color) {
+  background: $start-color;
+  background: linear-gradient(45deg, $start-color 0%, $end-color 100%);
+}
+
+// Shadow Effect
+@mixin shadow ( $shadow-color, $shadow-opacity, $shadow-distance ) {
+  box-shadow: 0 #{$shadow-distance}px #{$shadow-distance}px -#{($shadow-distance / 3)}px transparentize($shadow-color, $shadow-opacity), 0 #{$shadow-distance * 0.25 }px #{$shadow-distance * 0.5}px transparentize($shadow-color, $shadow-opacity);
+}
+
