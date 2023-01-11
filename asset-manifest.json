@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jason-fukura/static/css/main.0e9c78bd.css",
+    "main.js": "/jason-fukura/static/js/main.f10dcc71.js",
+    "static/js/787.42cc80f1.chunk.js": "/jason-fukura/static/js/787.42cc80f1.chunk.js",
+    "index.html": "/jason-fukura/index.html",
+    "main.0e9c78bd.css.map": "/jason-fukura/static/css/main.0e9c78bd.css.map",
+    "main.f10dcc71.js.map": "/jason-fukura/static/js/main.f10dcc71.js.map",
+    "787.42cc80f1.chunk.js.map": "/jason-fukura/static/js/787.42cc80f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e9c78bd.css",
+    "static/js/main.f10dcc71.js"
+  ]
+}
