@@ -9,7 +9,7 @@ function IndexGalleryItem(item: any) {
   return (
     <article className={classnames} key={item.item.id}>
       <figure className="gallery-item-image">
-        <a className="gallery-item-image-link" href={`case-study/${item.item.id}`}>
+        <a className="gallery-item-image-link" href={`/jason-fukura/case-study/${item.item.id}`}>
           <img
             src={item.item.images.gallery[0]}
             alt={item.item.summary}
@@ -19,7 +19,7 @@ function IndexGalleryItem(item: any) {
       </figure>
       <div className="gallery-item-content">
         <h3 className="heading-1">
-          <a className="gallery-item-link" href={`case-study/${item.item.id}`}>{item.item.title}</a>
+          <a className="gallery-item-link" href={`/jason-fukura/case-study/${item.item.id}`}>{item.item.title}</a>
         </h3>
         <h4 className="heading-4">{item.item.company}</h4>
         <p>{item.item.summary}</p>

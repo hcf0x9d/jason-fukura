@@ -111,11 +111,11 @@ a {
 }
 .gradientSection-inner .content {
   display: flex;
-  flex-wrap: wrap;
 }
 @media (max-width: 767px) {
   .gradientSection-inner .content {
     padding: 0 2rem;
+    flex-wrap: wrap;
   }
 }
 .gradientSection-inner .content-picWrap {
@@ -171,10 +171,10 @@ a {
 .introSection .header {
   min-height: 90vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #444547;
+  flex-direction: column;
 }
 .introSection .header .headerContent {
   margin-top: 5vh;
@@ -275,7 +275,7 @@ a {
   margin-left: 0;
 }
 .gallery-item:last-of-type {
-  height: 70vh;
+  height: 80vh;
 }
 @media (max-width: 767px) {
   .gallery-item:last-of-type {
