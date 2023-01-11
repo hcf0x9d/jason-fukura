@@ -11,7 +11,7 @@ const cases = [
     company: 'Capital One Investing',
     images: {
       gallery: ['/jason-fukura/retireMyWay.png', 'bottom'],
-      key: ['/jason-fukura/retiremyway-full.png', '18rem'],
+      key: ['/jason-fukura/retireMyWay-full.png', '18rem'],
     },
     summary: 'Updating a bleak, outdated marketing tool with a more friendly user experience.',
     tags: ['JavaScript', 'UX Design', 'User Research'],

@@ -20,7 +20,7 @@ function IndexGalleryItem(item: any) {
       </figure>
       <div className="gallery-item-content">
         <h3 className="heading-1">
-          <Link className="gallery-item-link" to={`/jason-fukura/case-study/${item.item.id}`}>{item.item.title}</Link>
+          <Link className="gallery-item-link" to={`case-study/${item.item.id}`}>{item.item.title}</Link>
         </h3>
         <h4 className="heading-4">{item.item.company}</h4>
         <p>{item.item.summary}</p>
