@@ -10,8 +10,8 @@ const cases = [
     title: 'Retire MyWay',
     company: 'Capital One Investing',
     images: {
-      gallery: ['/retireMyWay.png', 'bottom'],
-      key: ['/retireMyWay-full.png', '18rem'],
+      gallery: ['/retiremyway.png', 'bottom'],
+      key: ['/retiremyway-full.png', '18rem'],
     },
     summary: 'Updating a bleak, outdated marketing tool with a more friendly user experience.',
     tags: ['JavaScript', 'UX Design', 'User Research'],
