@@ -10,8 +10,8 @@ const cases = [
     title: 'Retire MyWay',
     company: 'Capital One Investing',
     images: {
-      gallery: ['/retiremyway.png', 'bottom'],
-      key: ['/retiremyway-full.png', '18rem'],
+      gallery: ['/jason-fukura/retireMyWay.png', 'bottom'],
+      key: ['/jason-fukura/retiremyway-full.png', '18rem'],
     },
     summary: 'Updating a bleak, outdated marketing tool with a more friendly user experience.',
     tags: ['JavaScript', 'UX Design', 'User Research'],
@@ -62,8 +62,8 @@ const cases = [
     title: 'ottoBox',
     company: 'otto',
     images: {
-      gallery: ['ottobox.png', 'bottom'],
-      key: ['/ottobox-full.png', '14rem'],
+      gallery: ['/jason-fukura/ottobox.png', 'bottom'],
+      key: ['/jason-fukura/ottobox-full.png', '14rem'],
     },
     summary: 'Making runtime web security a little more friendly.',
     tags: ['JavaScript', 'Elixir', 'UX Design', 'User Research'],
@@ -81,8 +81,8 @@ const cases = [
     title: 'Music LMS Work',
     company: 'Music Prodigy',
     images: {
-      gallery: ['lms.png', 'top'],
-      key: ['/retireMyWay-full.png', '18rem'],
+      gallery: ['/jason-fukura/lms.png', 'top'],
+      key: ['/jason-fukura/retireMyWay-full.png', '18rem'],
     },
     summary: 'Taking a product from "minimum viable" to "usable."',
     tags: ['LMS', 'UX Design'],
