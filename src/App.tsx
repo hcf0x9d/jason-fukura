@@ -99,8 +99,8 @@ const cases = [
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Index data={cases} />} />
-      <Route path="/case-study/:caseId" element={<CaseStudy data={cases} />} />
+      <Route path="/jason-fukura" element={<Index data={cases} />} />
+      <Route path="/jason-fukura/case-study/:caseId" element={<CaseStudy data={cases} />} />
     </Routes>
   );
 }
