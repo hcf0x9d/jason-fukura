@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/jason-fukura/static/css/main.293ca8f8.css",
-    "main.js": "/jason-fukura/static/js/main.9044b0bc.js",
+    "main.js": "/jason-fukura/static/js/main.3ed21b79.js",
     "static/js/787.42cc80f1.chunk.js": "/jason-fukura/static/js/787.42cc80f1.chunk.js",
     "index.html": "/jason-fukura/index.html",
     "main.293ca8f8.css.map": "/jason-fukura/static/css/main.293ca8f8.css.map",
-    "main.9044b0bc.js.map": "/jason-fukura/static/js/main.9044b0bc.js.map",
+    "main.3ed21b79.js.map": "/jason-fukura/static/js/main.3ed21b79.js.map",
     "787.42cc80f1.chunk.js.map": "/jason-fukura/static/js/787.42cc80f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.293ca8f8.css",
-    "static/js/main.9044b0bc.js"
+    "static/js/main.3ed21b79.js"
   ]
 }
