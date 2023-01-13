@@ -100,7 +100,7 @@ const cases = [
       <p>Working closely with our UX designer and Illustrator, I was given SVGs for each component and cut them up so there were joints where needed, then I created the animation flow for each of the layers.</p>
       <p>The final task was working in the logic so that as a user selected the checkboxes, the protagonist would move through the peloton. Also included was a "quiz" module.</p>`,
       conclusion: `<p>Everyone in the whole team was truly ecstatic about the final results. The landing page and controls were a huge success.</p>
-      <p><b>If you would like to see the project, please ask.</b></p>`
+      <p><b>A working example can be seen <a href="https://jfukura.github.io/financial-fitness/" target="_blank">here</a>.</b></p>`
     }
   },
   {
