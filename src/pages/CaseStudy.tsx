@@ -41,7 +41,15 @@ function CaseStudy(data:any) {
 
             <h2 className="heading-1">Details</h2>
             <div dangerouslySetInnerHTML={{ __html: selectedCase.content.details }} />
-
+            <ul className="screenshots">
+              {selectedCase.images.details?.map((src: string) => (
+                <li className="screenshots-item" key={src}>
+                  <a href={src} target="_blank" className="screenshots-target">
+                    <img src={src} alt="" className="screenshots-image"/>
+                  </a>
+                </li>
+              ))}
+            </ul>
             <h2 className="heading-1">Conclusion</h2>
             <div dangerouslySetInnerHTML={{ __html: selectedCase.content.conclusion }} />
           </div>
