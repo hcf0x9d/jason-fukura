@@ -23,9 +23,14 @@ function IndexIntro() {
             </div>
             <div className="content-content">
               <h2 className="heading-2 mb-0 mt-0">I don't create sexy, avant-garde, mold-breaking designs.</h2>
-              <p>My bread-and-butter is using ISO standards and best practices to design a foundation for teams to test
+              <p className="introText">My bread-and-butter is using ISO standards and best practices to design a foundation for teams to test
                 artifacts with real users. My specialty is in information architecture, user flow diagrams, wireframes,
                 and rapid prototyping in code&mdash;front-end or full-stack.</p>
+
+              <p>User Experience encompasses more than just creating wireframes and working in Figma. Of course, I can do that too, but my focus is always on making sure there is an understanding of the personas, user outcomes and goals, workflows, and use cases. Great experiences start with a flowchart, not a design.</p>
+              <p>Taking the hypotheses from research and design, I take the wireframes to the prototyping phase. Clickable prototypes are a great place to start, but I have always preferred to build prototypes in code with React or just HTML and JavaScript to get genuine user feedback.</p>
+              <p>I have also had the opportunity to help set up design systems for web and mobile, with an eye on i18n and a11y to ensure our system was as inclusive as possible.</p>
+
               <blockquote className="blockquote">
                 <p>People ignore design that ignores people.</p>
                 <cite>- Frank Chimero </cite>
