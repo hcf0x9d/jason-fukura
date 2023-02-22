@@ -58,51 +58,51 @@ const cases = [
       <p>Based on Object-Oriented principles, the widget can easily be moved between projects, and the SCSS files can be embedded into other projects as partials as well.</p>`
     }
   },
-  {
-    id: 'plantPad',
-    title: 'Plant Pad',
-    company: 'Kitsap Roots',
-    images: {
-      gallery: ['/jason-fukura/plantpad_ipad.png', 'bottom'],
-      key: ['/jason-fukura/plantpad_full.png', '18rem']
-    },
-    summary: 'Tracking your garden through the seasons, with an expert Garden Coach.',
-    tags: ['React', 'UX Design', 'Python'],
-    content: {
-      brief: 'In an effort to provide clients with a more in-depth garden coaching experience, I was tasked with creating an application that could be used to share notes and educational content.',
-      introduction: `<p>The hypothesis behind the Plant Pad application is that a gardener who is seeking assistance from a garden coach would have a single location where they could learn the details about the plants in their garden, how to care for them, as well as communicate directly with the coach in one place.</p>`,
-      details: `<p>This application encompasses three primary pieces:</p>
-        <ol>
-          <li>A journal that where the user can attach images as well as share specific entries with the garden coach. The coach can then respond directly in the entry.</li>
-          <li>A list of plants that the user has in their garden with all of the content needed to understand the plant's environmental requirements as well as a calendar for scheduling the sowing timeline, harvest windows, and other key checkpoints.</li>
-          <li>A task list based on the plants that exist in the garden.</li>
-        </ol>
-`,
-      conclusion: `<p>While the project is temporarily on hold, the designs and codebase still exist and are prepared to be picked back up once some key user and market research is completed.</p>`
-    }
-  },
-  {
-    id: 'financialFitness',
-    title: 'Financial Fitness Landing Page',
-    company: 'Capital One Investing',
-    images: {
-      gallery: ['/jason-fukura/financialfitness-browser.png', 'bottom'],
-      key: ['/jason-fukura/financialfitness-full.png', '10rem']
-    },
-    summary: 'Visualizing where you are in retirement, but not with a graph.',
-    tags: ['JavaScript'],
-    content: {
-      brief: 'While not a mind-blowing application, we managed to create an experience for consumers that helped give an idea of where they were in their retirement planning, without resorting to a boring graph.',
-      introduction: `<p>The designer I was working with had come up with the idea of a "race," and visualizing where you were at in the pack as you prepare for retirement. The idea of a survey of sorts came up and there was a wish that we could show the data some other way.</p>
-      <p>As a Design Technologist, it was my duty to help guide the crossover of design and development. Designers aren't always aware of what is capable and how much effort different ideas take to implement.</p>`,
-      details: `<p>The goal was to make the experience as interactive as possible, so I suggested animating SVGs to make the bicyclists actually race each other, with our protagonist in a different color in order to stand-out.</p>
-      <p>The question of feasibility was discussed, and I offered to make a prototype to test the theory out and make sure that I could complete the project on our tight timeline, as well as find any learnings from cross-platform testing.</p>
-      <p>Working closely with our UX designer and Illustrator, I was given SVGs for each component and cut them up so there were joints where needed, then I created the animation flow for each of the layers.</p>
-      <p>The final task was working in the logic so that as a user selected the checkboxes, the protagonist would move through the peloton. Also included was a "quiz" module.</p>`,
-      conclusion: `<p>Everyone in the whole team was truly ecstatic about the final results. The landing page and controls were a huge success.</p>
-      <p><b>A working example can be seen <a href="https://jfukura.github.io/financial-fitness/" target="_blank">here</a>.</b></p>`
-    }
-  },
+//   {
+//     id: 'plantPad',
+//     title: 'Plant Pad',
+//     company: 'Kitsap Roots',
+//     images: {
+//       gallery: ['/jason-fukura/plantpad_ipad.png', 'bottom'],
+//       key: ['/jason-fukura/plantpad_full.png', '18rem']
+//     },
+//     summary: 'Tracking your garden through the seasons, with an expert Garden Coach.',
+//     tags: ['React', 'UX Design', 'Python'],
+//     content: {
+//       brief: 'In an effort to provide clients with a more in-depth garden coaching experience, I was tasked with creating an application that could be used to share notes and educational content.',
+//       introduction: `<p>The hypothesis behind the Plant Pad application is that a gardener who is seeking assistance from a garden coach would have a single location where they could learn the details about the plants in their garden, how to care for them, as well as communicate directly with the coach in one place.</p>`,
+//       details: `<p>This application encompasses three primary pieces:</p>
+//         <ol>
+//           <li>A journal that where the user can attach images as well as share specific entries with the garden coach. The coach can then respond directly in the entry.</li>
+//           <li>A list of plants that the user has in their garden with all of the content needed to understand the plant's environmental requirements as well as a calendar for scheduling the sowing timeline, harvest windows, and other key checkpoints.</li>
+//           <li>A task list based on the plants that exist in the garden.</li>
+//         </ol>
+// `,
+//       conclusion: `<p>While the project is temporarily on hold, the designs and codebase still exist and are prepared to be picked back up once some key user and market research is completed.</p>`
+//     }
+//   },
+//   {
+//     id: 'financialFitness',
+//     title: 'Financial Fitness Landing Page',
+//     company: 'Capital One Investing',
+//     images: {
+//       gallery: ['/jason-fukura/financialfitness-browser.png', 'bottom'],
+//       key: ['/jason-fukura/financialfitness-full.png', '10rem']
+//     },
+//     summary: 'Visualizing where you are in retirement, but not with a graph.',
+//     tags: ['JavaScript'],
+//     content: {
+//       brief: 'While not a mind-blowing application, we managed to create an experience for consumers that helped give an idea of where they were in their retirement planning, without resorting to a boring graph.',
+//       introduction: `<p>The designer I was working with had come up with the idea of a "race," and visualizing where you were at in the pack as you prepare for retirement. The idea of a survey of sorts came up and there was a wish that we could show the data some other way.</p>
+//       <p>As a Design Technologist, it was my duty to help guide the crossover of design and development. Designers aren't always aware of what is capable and how much effort different ideas take to implement.</p>`,
+//       details: `<p>The goal was to make the experience as interactive as possible, so I suggested animating SVGs to make the bicyclists actually race each other, with our protagonist in a different color in order to stand-out.</p>
+//       <p>The question of feasibility was discussed, and I offered to make a prototype to test the theory out and make sure that I could complete the project on our tight timeline, as well as find any learnings from cross-platform testing.</p>
+//       <p>Working closely with our UX designer and Illustrator, I was given SVGs for each component and cut them up so there were joints where needed, then I created the animation flow for each of the layers.</p>
+//       <p>The final task was working in the logic so that as a user selected the checkboxes, the protagonist would move through the peloton. Also included was a "quiz" module.</p>`,
+//       conclusion: `<p>Everyone in the whole team was truly ecstatic about the final results. The landing page and controls were a huge success.</p>
+//       <p><b>A working example can be seen <a href="https://jfukura.github.io/financial-fitness/" target="_blank">here</a>.</b></p>`
+//     }
+//   },
   {
     id: 'ottoBox',
     title: 'ottoBox',
