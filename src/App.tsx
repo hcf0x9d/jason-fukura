@@ -128,7 +128,7 @@ const cases = [
     company: 'Music Prodigy',
     images: {
       gallery: ['/jason-fukura/lms.png', 'top'],
-      key: ['/jason-fukura/retireMyWay-full.png', '18rem'],
+      key: ['/jason-fukura/lms-full.png', '18rem'],
       details: ['/jason-fukura/mp_CopyClassContent.png', '/jason-fukura/mp_TeacherOnboarding.png']
     },
     summary: 'Taking a product from "minimum viable" to "usable."',
