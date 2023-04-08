@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jason-fukura/static/css/main.90f29600.css",
     "main.js": "/jason-fukura/static/js/main.0c2a03d3.js",
+    "main.css": "/jason-fukura/static/css/main.44e9210e.css",
     "static/js/787.42cc80f1.chunk.js": "/jason-fukura/static/js/787.42cc80f1.chunk.js",
     "static/media/unicorn_mark.svg": "/jason-fukura/static/media/unicorn_mark.478ac085cf7cbead650e31cb8df9e588.svg",
     "static/media/Adobe_XD_CC_icon.svg": "/jason-fukura/static/media/Adobe_XD_CC_icon.523a767d306c4aaa7a14d4a1b356517f.svg",
@@ -13,12 +13,12 @@
     "static/media/Adobe_Illustrator_CC_icon.svg": "/jason-fukura/static/media/Adobe_Illustrator_CC_icon.6bcb1c52ee6afb285118fc98805962c5.svg",
     "index.html": "/jason-fukura/index.html",
     "static/media/Figma-logo.svg": "/jason-fukura/static/media/Figma-logo.ecc65baa91e8667792a7b351b8884c2a.svg",
-    "main.90f29600.css.map": "/jason-fukura/static/css/main.90f29600.css.map",
     "main.0c2a03d3.js.map": "/jason-fukura/static/js/main.0c2a03d3.js.map",
+    "main.44e9210e.css.map": "/jason-fukura/static/css/main.44e9210e.css.map",
     "787.42cc80f1.chunk.js.map": "/jason-fukura/static/js/787.42cc80f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90f29600.css",
-    "static/js/main.0c2a03d3.js"
+    "static/js/main.0c2a03d3.js",
+    "static/css/main.44e9210e.css"
   ]
 }
