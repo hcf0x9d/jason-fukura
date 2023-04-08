@@ -22,11 +22,12 @@
       font-size: 1.618rem;
       font-weight: normal;
       line-height: 1;
-      width: 3.5rem;
+      width: 4.5rem;
       color: $gray-3;
 
       @include phone() {
         font-size: 1.25rem;
+        width: 3.5rem;
       }
 
     }

@@ -199,12 +199,13 @@ a {
   font-size: 1.618rem;
   font-weight: normal;
   line-height: 1;
-  width: 3.5rem;
+  width: 4.5rem;
   color: #7E7F82;
 }
 @media (max-width: 767px) {
   .educationList-item .year {
     font-size: 1.25rem;
+    width: 3.5rem;
   }
 }
 .educationList-item .detail .certification {
