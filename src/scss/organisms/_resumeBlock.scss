@@ -5,10 +5,22 @@
   gap: 16px;
   margin-top: 1.5rem;
 
+  @include phone() {
+    flex-direction: column;
+  }
+
   &-2 {
     width: 66.66%;
+
+    @include phone() {
+      width: 100%;
+    }
   }
   &-1 {
     width: 33.333%;
+
+    @include phone() {
+      width: 100%;
+    }
   }
 }

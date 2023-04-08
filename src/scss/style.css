@@ -20,10 +20,14 @@ html, body {
   font-weight: bold;
   line-height: 0.8;
   margin: 0 0 3rem;
+  position: relative;
+  z-index: 10;
 }
 @media (max-width: 767px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    line-height: 0.9;
+    margin-bottom: 1rem;
   }
 }
 
@@ -33,6 +37,11 @@ html, body {
   font-weight: bold;
   line-height: 1;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .heading-2 {
+    font-size: 1.75rem;
+  }
 }
 
 .sectionHeader {
@@ -61,6 +70,11 @@ html, body {
   line-height: 1.2;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .heading-3 {
+    font-size: 1.5rem;
+  }
+}
 
 a {
   text-decoration: none;
@@ -86,6 +100,12 @@ a {
   margin-top: -1rem;
   z-index: 0;
   position: relative;
+}
+@media (max-width: 767px) {
+  .header .signature {
+    height: 6rem;
+    margin-top: 0;
+  }
 }
 
 .caseStudyBlock {
@@ -134,11 +154,26 @@ a {
   gap: 16px;
   margin-top: 1.5rem;
 }
+@media (max-width: 767px) {
+  .resume {
+    flex-direction: column;
+  }
+}
 .resume-2 {
   width: 66.66%;
 }
+@media (max-width: 767px) {
+  .resume-2 {
+    width: 100%;
+  }
+}
 .resume-1 {
   width: 33.333%;
+}
+@media (max-width: 767px) {
+  .resume-1 {
+    width: 100%;
+  }
 }
 
 /**
@@ -164,8 +199,13 @@ a {
   font-size: 1.618rem;
   font-weight: normal;
   line-height: 1;
-  width: 4.5rem;
+  width: 3.5rem;
   color: #7E7F82;
+}
+@media (max-width: 767px) {
+  .educationList-item .year {
+    font-size: 1.25rem;
+  }
 }
 .educationList-item .detail .certification {
   display: block;
@@ -173,6 +213,11 @@ a {
   font-size: 1.618rem;
   font-weight: bold;
   line-height: 1;
+}
+@media (max-width: 767px) {
+  .educationList-item .detail .certification {
+    font-size: 1.25rem;
+  }
 }
 .educationList-item .detail .institution {
   display: block;
@@ -221,6 +266,12 @@ a {
   gap: 16px;
   list-style-type: none;
   padding: 0;
+}
+@media (max-width: 767px) {
+  .socialList {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .socialList-item > a {
   display: flex;

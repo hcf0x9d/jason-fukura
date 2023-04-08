@@ -5,6 +5,12 @@
   list-style-type: none;
   padding: 0;
 
+  @include phone() {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
   &-item {
     & > a {
       display: flex;
