@@ -1,0 +1,46 @@
+/**
+  <li key={education.data.year} className="educationList-item">
+    <div className="year">{education.data.year}</div>
+    <div className="detail">
+      <span className="certification">{education.data.certification}</span>
+      <span className="institution">{education.data.institution}</span>
+    </div>
+  </li>
+ */
+
+.educationList {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+
+  &-item {
+    display: flex;
+    margin-bottom: 1rem;
+
+    & .year {
+      font-family: $font;
+      font-size: 1.618rem;
+      font-weight: normal;
+      line-height: 1;
+      width: 4.5rem;
+      color: $gray-3;
+    }
+    & .detail {
+      & .certification {
+        display: block;
+        font-family: $font;
+        font-size: 1.618rem;
+        font-weight: bold;
+        line-height: 1;
+      }
+      & .institution {
+        display: block;
+        font-family: $font;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1;
+        color: $gray-3;
+      }
+    }
+  }
+}

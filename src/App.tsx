@@ -2,152 +2,153 @@ import React from 'react';
 import './scss/style.css';
 import { Routes, Route } from 'react-router-dom'
 import Index from "./pages/Index";
-import CaseStudy from "./pages/CaseStudy";
+// import CaseStudy from "./pages/CaseStudy";
+import { ReactComponent as FigmaLogo } from "./img/Figma-logo.svg"
+import { ReactComponent as XdLogo } from "./img/Adobe_XD_CC_icon.svg"
+import { ReactComponent as IllustratorLogo } from "./img/Adobe_Illustrator_CC_icon.svg"
+import { ReactComponent as WebstormLogo } from "./img/WebStorm_Icon.svg"
 
-const cases = [
-  {
-    id: 'retireMyWay',
-    title: 'Retire MyWay',
-    company: 'Capital One Investing',
-    images: {
-      gallery: ['/jason-fukura/retireMyWay.png', 'bottom'],
-      key: ['/jason-fukura/retireMyWay-full.png', '18rem'],
-      details: ['/jason-fukura/rmw_RetirementPreview.png', '/jason-fukura/rmw_Slider.png']
-    },
-    summary: 'Updating a bleak, outdated marketing tool with a more friendly user experience.',
-    tags: ['JavaScript', 'UX Design', 'User Research'],
-    content: {
-      brief: 'The Capital One Investing Retire MyWay web application was very outdated. As a stepping stone towards revamping this site, and as a part of a marketing campaign built around retirement planning, the request was made to re-envision the application and build something that was more user-friendly, on brand and informational. For this project, I was acting as designer (User Experience and User Interface), as well as developer.',
-      introduction: `<p>Armed with a knowledge of User Experience guidelines--including the books, and ISO standards that I had available--I researched what competitors were doing, especially around one specific part of the equation: estimating the age of death for the user.</p>
-      <p>Many sites were asking the user to estimate an age of death, and some were coming up with a random age based on gender--which was the suggestion of the strategists I was working with. Instead, I suggested we simply use the Social Security Administration's Actuary table. By asking the user what age and gender they currently are, we were able to estimate an age of death for the user without them thinking about it.</p>
-      <p>Other problems were solved in a similar fashion by keeping in mind that this tool was not an actual retirement calculator, but more of an estimation to see if the user is on track.</p>
-      <p>After coming up with a base user flow and then wireframe, I generated a quick HTML prototype that would walk the user through the process and show them a real number.</p>
-      <p>Following user-testing, slight modifications were made to the application and the CSS and JavaScript were bundled into a widget that could easily be added to any project.</p>
-      <p>All calculations were handled "on-the-fly" and the complex, compound-interest formula was thoroughly reviewed prior to launch.</p>`,
-      details: `<h3 class="heading-3">Rating: 82%</h3>
-      <ul>
-        <li>4 users rated the widget as a 10/10</li>
-        <li>1 user rated the widget as 9/10</li>
-        <li>1 user rated the widget as 0/10</li>
-      </ul>
-      <h4 class="heading-4">A quick note on the 0/10 rating:</h4>
-      <p>The assumption is that this user was misreading or misunderstanding the purpose of this widget. In their initial interview they mentioned the following expectations:</p>
-      <ul>
-        <li>Will show metrics, statistics and a graph of retirement account growth over time</li>
-        <li>Tool should provide breakdown of accounts</li>
-        <li>In general, looking for a full application experience like that being developed by another team</li>
-      </ul>
-      <p>Obviously, these points fall well outside the scope of a small marketing widget. Functionality like this would require connection to the user's accounts, which requires deeper levels of integration and security.</p>
-      <h3 class="heading-3">Things that were successful</h3>
-      <ul>
-        <li>Navigation was well received (ISO 9241-151 8.4.2)</li>
-        <li>Most found the layout simple to understand by using a conversational approach (ISO 9241-110 4.5.1, 4.5.4)</li>
-        <li>By breaking the up the layout into small chunks we were able to keep distractions down (ISO 9241-110 4.3.2, 4.4.1)</li>
-        <li>We should continue to prefill the retirement age at 65 or 67 (ISO 9241-110 4.3.2, 4.3.4)</li>
-        <li>Estimating the age of death was a big win for simplicity (ISO 9241-110 4.3.2, 4.3.4-5)</li>
-      </ul>
-      <h3 class="heading-3">Things that needed to be fixed</h3>
-      <ul>
-        <li>Implementing the ability to go to any step (knowingly omitted from the experience) (ISO 9241-151 8.4.13)</li>
-        <li>Show links that pop-out and links that perform in-page tasks (ISO 9241-151 9.4.10-12)</li>
-        <li>Finish implementing proper validation (ISO 9241-151 10.3.1-2, ISO 9241-110 4.8.1-2, 4.8.8)</li>
-        <li>Intro screen should show more than just disclosures, but also the information needed. (9241-110 4.2)</li>
-        <li>Consider how we structure the information on the "Investing Style" page</li>
-      </ul>`,
-      conclusion: `<p>The final project was developed using a mix of jQuery, Vanilla (Object Oriented) JavaScript, SASS/SCSS and HTML5. All parts of the web application were designed to be fully responsive, and we included the jQuery Touch Punch library to assist with making the jQuery UI slider elements touch friendly.</p>
-      <p>Based on Object-Oriented principles, the widget can easily be moved between projects, and the SCSS files can be embedded into other projects as partials as well.</p>`
-    }
-  },
+// export type caseStudyType = {
+//   id: string,
+//   title: string,
+//   intro: string,
+//   keyImage: {
+//     url: string,
+//     alt: string
+//   },
+//   images: [
+//     {
+//       url: string,
+//       alt: string
+//     }
+//   ],
+//   overview: {
+//     company: string,
+//     role: string,
+//     type: string
+//   },
+//   content: {
+//     summary: string,
+//     challenge: string,
+//     solution: string,
+//     results: string
+//   }
+// }
+
+// const cases = [
 //   {
-//     id: 'plantPad',
-//     title: 'Plant Pad',
-//     company: 'Kitsap Roots',
-//     images: {
-//       gallery: ['/jason-fukura/plantpad_ipad.png', 'bottom'],
-//       key: ['/jason-fukura/plantpad_full.png', '18rem']
+//     id: "retirement-calculator",
+//     title: "Reimagining a simple retirement calculator",
+//     intro: "Turning an awkward web application into a practical, embeddable widget.",
+//     keyImage: {
+//         url: rmw1,
+//         alt: "Retire MyWay Application"
 //     },
-//     summary: 'Tracking your garden through the seasons, with an expert Garden Coach.',
-//     tags: ['React', 'UX Design', 'Python'],
+//     images: [
+//       { url: rmw1, alt: "Initial questionnaire" },
+//       { url: rmw2, alt: "Investing profile slider" },
+//       { url: rmw3, alt: "Final summary with investing target" },
+//     ],
+//     overview: {
+//       company: "Capital One Investing",
+//       role: "UX Designer & Developer",
+//       type: "Marketing"
+//     },
 //     content: {
-//       brief: 'In an effort to provide clients with a more in-depth garden coaching experience, I was tasked with creating an application that could be used to share notes and educational content.',
-//       introduction: `<p>The hypothesis behind the Plant Pad application is that a gardener who is seeking assistance from a garden coach would have a single location where they could learn the details about the plants in their garden, how to care for them, as well as communicate directly with the coach in one place.</p>`,
-//       details: `<p>This application encompasses three primary pieces:</p>
-//         <ol>
-//           <li>A journal that where the user can attach images as well as share specific entries with the garden coach. The coach can then respond directly in the entry.</li>
-//           <li>A list of plants that the user has in their garden with all of the content needed to understand the plant's environmental requirements as well as a calendar for scheduling the sowing timeline, harvest windows, and other key checkpoints.</li>
-//           <li>A task list based on the plants that exist in the garden.</li>
-//         </ol>
-// `,
-//       conclusion: `<p>While the project is temporarily on hold, the designs and codebase still exist and are prepared to be picked back up once some key user and market research is completed.</p>`
+//       summary: "<p>The Capital One Investing Retire MyWay web application needed to be updated. As a stepping stone towards revamping the site and as a part of a marketing campaign built around retirement planning, the request was made to re-envision the application and create something more user-friendly, on-brand, and informational.</p>",
+//       challenge: "<p>While nobody expects to get accurate, fully detailed retirement planning advice from a site not attached to your accounts and monitoring your elections, it should be possible to get a simple, high-level view of your path. The final application must acquire enough information to provide a mildly accurate result but shouldn’t ask for so much that users will ignore it. As this is a marketing tool, users won’t likely stick around for an overly long form and involved process.</p>" +
+//         "<p>One of the issues with getting an accurate retirement plan is understanding the length of time the user will need to draw from their account—in other words, how long after retirement will they live? The original Retire MyWay application handled this in the most simplistic manner possible: ask the user to provide an age of death. Unfortunately, this question alone could be the reason for the low adoption of the application.</p>",
+//       solution: "<p>After discussing the requirements and potential solutions with my Project Manager, I did a competitive landscape analysis. I went looking for any and every retirement calculator that existed on the internet. Most of them had the same features:</p>" +
+//         "<ul><li>A simple form</li><li>An investing profile</li><li>The results</li></ul>" +
+//         "<p>The issue we wanted to solve was that a basic form is uninviting and can feel too “technical.” With that in mind, we created a natural language form that behaves more like Madlibs than a form. We also wanted to limit the number of questions asked since more questions will often lead to fewer responses in any form.</p>" +
+//         "<p>Another barrier to entry we wanted to eliminate was the form asking the user for their “death age.” This question obviously will cause many users to stumble and potentially drop out. Understanding this, we used the Social Security Administration’s Actuary Table to identify an approximate “age of death” for the user based on their gender response (using female for “decline to identify”) and age response.</p>" +
+//         "<p>The final key point for this application is that it must be portable and be able to be installed on any web page that the business deems valuable. With this in mind, the final application was turned into a jQuery plugin that required instantiation into a parent container but nothing else.</p>",
+//       results: "<p>After doing some internal reviews, the application was quickly built into a prototype and passed into UserTesting.com to be tested with people fitting our target demographics.</p>" +
+//         "<p>What was successful:</p>" +
+//         "<ul><li>Navigation was well received (ISO 9241-151 8.4.2)</li><li>Most found the layout simple to understand by using a conversational approach (ISO 9241-110 4.5.1, 4.5.4)</li><li>By breaking the up the layout into small chunks, we were able to keep distractions down (ISO 9241-110 4.3.2, 4.4.1)</li><li>We should continue to prefill the retirement age at 65 or 67 (ISO 9241-110 4.3.2, 4.3.4)</li><li>Estimating the age of death was a big win for simplicity (ISO 9241-110 4.3.2, 4.3.4-5)</li></ul>" +
+//         "<p>Things that need to be fixed:</p>" +
+//         "<ul><li>Implementing the ability to go to any step (ISO 9241-151 8.4.13)</li><li>Show a difference between links that pop out and links that perform in-page tasks (ISO 9241-151 9.4.10-12)</li><li>Finish implementing proper validation (ISO 9241-151 10.3.1-2, ISO 9241-110 4.8.1-2, 4.8.8)</li><li>The intro screen should show more than just disclosures but also the information needed. (9241-110 4.2)</li><li>Consider how we structure the information on the “Investing Style” page</li></ul>" +
+//         "<p>The “Preview Screen” was the view with the most changes to be made. That would be to consider changing the size of the footnote text explaining the 70%-90% section of the slider. We made no other changes since most users could figure the slider out with minimal effort. We also removed the map pin in favor of a “ghosted” slider knob on the slider to reduce visual clutter (ISO 9241-151 9.3.17, 9.6.1-9.6.2).</p>" +
+//         "<p>While the final project was completed and packaged up into a jQuery plugin, as desired, the division was ultimately shuttered before the application could be tested thoroughly with a more extensive set of users.</p>",
+//       pullQuote: "This site is nice and easy to use. Asks for only basic info, but provides links for more info if needed. Nice that all that info is not on the page to add clutter. I would bookmark a site like this and refer to it often."
 //     }
 //   },
 //   {
-//     id: 'financialFitness',
-//     title: 'Financial Fitness Landing Page',
-//     company: 'Capital One Investing',
-//     images: {
-//       gallery: ['/jason-fukura/financialfitness-browser.png', 'bottom'],
-//       key: ['/jason-fukura/financialfitness-full.png', '10rem']
+//     id: "cybersecurity-ux",
+//     title: "Cyber security UX",
+//     intro: "Making runtime web security for large sites a little more user friendly.",
+//     keyImage: {
+//       url: rmw1,
+//       alt: "Retire MyWay Application"
 //     },
-//     summary: 'Visualizing where you are in retirement, but not with a graph.',
-//     tags: ['JavaScript'],
+//     images: [
+//       { url: rmw1, alt: "Initial questionnaire" },
+//     ],
+//     overview: {
+//       company: "CI Security",
+//       role: "UX Designer",
+//       type: "Product"
+//     },
 //     content: {
-//       brief: 'While not a mind-blowing application, we managed to create an experience for consumers that helped give an idea of where they were in their retirement planning, without resorting to a boring graph.',
-//       introduction: `<p>The designer I was working with had come up with the idea of a "race," and visualizing where you were at in the pack as you prepare for retirement. The idea of a survey of sorts came up and there was a wish that we could show the data some other way.</p>
-//       <p>As a Design Technologist, it was my duty to help guide the crossover of design and development. Designers aren't always aware of what is capable and how much effort different ideas take to implement.</p>`,
-//       details: `<p>The goal was to make the experience as interactive as possible, so I suggested animating SVGs to make the bicyclists actually race each other, with our protagonist in a different color in order to stand-out.</p>
-//       <p>The question of feasibility was discussed, and I offered to make a prototype to test the theory out and make sure that I could complete the project on our tight timeline, as well as find any learnings from cross-platform testing.</p>
-//       <p>Working closely with our UX designer and Illustrator, I was given SVGs for each component and cut them up so there were joints where needed, then I created the animation flow for each of the layers.</p>
-//       <p>The final task was working in the logic so that as a user selected the checkboxes, the protagonist would move through the peloton. Also included was a "quiz" module.</p>`,
-//       conclusion: `<p>Everyone in the whole team was truly ecstatic about the final results. The landing page and controls were a huge success.</p>
-//       <p><b>A working example can be seen <a href="https://jfukura.github.io/financial-fitness/" target="_blank">here</a>.</b></p>`
+//       summary: "<p>I was initially hired by CI Security (Critical Informatics, at the time) as a contractor to design the first version of their web-based dashboard for clients to view.</p>",
+//       challenge: "<p>In the world of cybersecurity, most of the work that happens is behind the scenes and hard to visualize. Things like analysts monitoring packet data, investigating anomalies, and machines that ingest terabytes of data per month.</p>" +
+//         "<p>The lack of a portal creates a disparity between the client and the company. A communication issue can arise quickly. Conversely, the clients mostly don't want to be digging through data and trying to understand it. That is what they pay us to do. How do you show enough data to not make the client concerned while showing enough data to understand our company is working on things behind-the-scenes?</p>",
+//       solution: "<p>The goal was to move quickly, as the product was already in-flight and needed a dashboard ASAP. Because of this limitation, I worked very quickly through some wireframes after doing competitive research. There were many things that the stakeholders didn't want to be incorporated into the design that I needed to be aware of. After a couple of meetings with stakeholders, I began the process and pushed out a very early draft to get a feel for which dataset needed the most \"weight.\"</p>" +
+//         "<p>Through that initial concept, we were able to pivot quickly to a more refined view. In the end, we ended up modifying the charts to take up less space, utilizing a 2-D heat map concept to show a relative \"activity level.\" Again, a key aspect of this project was that we did not want to give so much data that the client felt they needed to investigate.</p>" +
+//         "<p>During this project, I also designed a little Kraken logo, just as a fun thing. The company liked it so much that several employees have it tattooed on their bodies somewhere.</p>",
+//       results: "<p>After completing the rounds of design and feedback, I developed a prototype built with HTML, CSS3 (SCSS), and D3.js. The prototype used scrubbed production data in the JSON formatting that the final development environment would be gathering, which meant I first needed to learn the custom API response that our company was creating, then figuring out how to apply that large dataset to multiple graphs, charts, and tables in the final output.</p>" +
+//         "<p>The final product passed to development was a fully-functional front-end adjusted to work in the production environment.</p>",
+//       pullQuote: ""
 //     }
 //   },
-  {
-    id: 'ottoBox',
-    title: 'ottoBox',
-    company: 'otto',
-    images: {
-      gallery: ['/jason-fukura/ottobox.png', 'bottom'],
-      key: ['/jason-fukura/ottobox-full.png', '14rem'],
-    },
-    summary: 'Making runtime web security a little more friendly.',
-    tags: ['JavaScript', 'Elixir', 'UX Design', 'User Research'],
-    content: {
-      brief: 'Presented with the question of "how do we best show a user what their websites are doing on the client-side interactions," there are many ways to move forward. Finding the sweet-spot of actionable information and "too much noise" can be a challenge.',
-      introduction: `<p>The goal of the user experience for ottoBox was to make the application as simple to work with as an email client, which we opted to keep as a visual metaphor while designing and developing the first version of this product.</p>
-      <p></p>`,
-      details: `<p>Of primary importance is the fact that the user may not always understand what it is they are looking at, so providing them with the most rich data possible is key. Another important factor is understanding that the product sometimes works silently. It is a good thing to be able to login and not see anything in the inbox, but how do we show that we are still providing value led us to adding a "pageviews" count and keeping the items that were automatically blocked by the system in a separate "drawer."  When the user logs in, they can see that we are still monitoring and have provided value by blocking known issues without the user doing anything.</p>
-        <p>Another complex issue we wanted to solve was dealing with Content Security Policies. CSPs can be a headache to manage, especially on larger websites that make hundereds or thousands of 3rd party web requests. The platform was designed to make managing and deploying CSPs easy and seamless. The user is given a simple visual layout of the CSP rules, making it easy to add found violations to the policy, quickly save, preview and deploy.</p>`,
-      conclusion: `<p>Taking complex, high risk issues like cybersecurity and turning them into pleasant and simple user experiences has taken a lot of research, conceptualizing, and revision to get us to a place where we have a deployable product that is delighting users already.</p>`
-    }
-  },
-  {
-    id: 'musicLms',
-    title: 'Music LMS Work',
-    company: 'Music Prodigy',
-    images: {
-      gallery: ['/jason-fukura/lms.png', 'top'],
-      key: ['/jason-fukura/lms-full.png', '18rem'],
-      details: ['/jason-fukura/mp_CopyClassContent.png', '/jason-fukura/mp_TeacherOnboarding.png']
-    },
-    summary: 'Taking a product from "minimum viable" to "usable."',
-    tags: ['LMS', 'UX Design'],
-    content: {
-      brief: 'The hallmark of many startups is the desire to move fast enough to completely skip design. Then there\'s tech-debt to be dealt with.',
-      introduction: `<p>I was brought in to Music Prodigy to take their initial, developer-built application and begin turning it into something that was more than just "functional," but hopefully pleasant and easy to use. As a designer who was splitting his time as one of the few front-end focused web developers who was also designing the UX and UI of a complex product, while also redesigning and developing the company website and updating the branding, this was no small feat.</p>`,
-      details: `<p>The product can be described as "Guitar Hero" for wind and orchestral instruments. For those familiar with Yousician, it's a similar concept. The student can be assigned something from their teacher and then play along with the assignment on their phone, tablet, or computer. The application grades them, sending that back to the teacher and an audio recording of the capture.</p>
-        <p>The specific task that is called out in these early diagrams and wireframes is assigning something new to a class, from a "grade book view," which we were in the process of designing and developing. There are many steps involved in creating a new assignment. I was able to recall my experience as a public school music teacher to help inform some of the requirements and design concepts. Using best practices and ISO standards, we refined the process into something elegant and simple for the teacher to navigate.</p>`,
-      conclusion: `<p>Ultimately, the company scrapped this part of the project, and I left the company before its implementation. I assisted in preparing a full workflow that could be revisited and assessed at a later date. All of my workflow diagrams include annotations so that anybody who takes a project over that has been shelved for a while will be able to see where we last left off and what we were thinking.</p>`
-    }
-  },
+//   {
+//     id: "javascript-security",
+//     title: "JavaScript Security Monitoring",
+//     intro: "Making runtime web security a little more friendly.",
+//     keyImage: {
+//       url: ottoBox,
+//       alt: "ottoBox"
+//     },
+//     images: [
+//       { url: ottoBox, alt: "ottoBox" },
+//     ],
+//     overview: {
+//       company: "Capital One Investing",
+//       role: "UX Designer & Developer",
+//       type: "Marketing"
+//     },
+//     content: {
+//       summary: "<p>Monitoring runtime security of a web application or website can be challenging endeavor, otto wants to change that.</p>",
+//       challenge: "<p>The goal of the user experience for ottoBox was to make the application as simple to work with as an email client, which we opted to keep as a visual metaphor while designing and developing the first version of this product.</p>",
+//       solution: "<p>Of primary importance is the fact that the user may not always understand what it is they are looking at, so providing them with the most rich data possible is key. Another important factor is understanding that the product sometimes works silently. It is a good thing to be able to login and not see anything in the inbox, but how do we show that we are still providing value led us to adding a \"pageviews\" count and keeping the items that were automatically blocked by the system in a separate \"drawer.\"  When the user logs in, they can see that we are still monitoring and have provided value by blocking known issues without the user doing anything.</p>" +
+//         "<p>Another complex issue we wanted to solve was dealing with Content Security Policies. CSPs can be a headache to manage, especially on larger websites that make hundereds or thousands of 3rd party web requests. The platform was designed to make managing and deploying CSPs easy and seamless. The user is given a simple visual layout of the CSP rules, making it easy to add found violations to the policy, quickly save, preview and deploy.</p>",
+//       results: "<p>Taking complex, high risk issues like Cyber Security and turning them into pleasant and simple user experiences has taken a lot of research, conceptualizing, and revision to get us to a place where we have a deployable product that is delighting users already.</p>",
+//       pullQuote: ""
+//     }
+//   },
+// ]
+// const companies = [
+//   {name: "NAME", icon: "ICON"}
+// ]
+const education = [
+  { certification: "Certified Usability Analyst", institution: "Human Factors International", year: "2023"},
+  { certification: "Nanodegree: Full-Stack Dev", institution: "Central Washington University", year: "2017" },
+  { certification: "Nanodegree: Front-End Web", institution: "Central Washington University", year: "2016" },
+  { certification: "BA Music Education", institution: "Central Washington University", year: "2005" }
+]
+const skills = ['UX Design','Information Architecture','User Task Mapping','Product Design','Rapid Prototyping','Usability Testing','Design Systems']
+const tools = [
+  { name: "Figma", icon: <FigmaLogo /> },
+  { name: "Adobe XD", icon: <XdLogo /> },
+  { name: "Adobe Illustrator", icon: <IllustratorLogo /> },
+  { name: "Jetbrains Webstorm", icon: <WebstormLogo /> },
 ]
 
 function App() {
   return (
     <Routes>
-      <Route path="/jason-fukura" element={<Index data={cases} />} />
-      <Route path="/jason-fukura/case-study/:caseId" element={<CaseStudy data={cases} />} />
+      <Route path="/jason-fukura" element={<Index education={education} skills={skills} tools={tools} />} />
+      {/*<Route path="/jason-fukura/case-study/:caseId" element={<CaseStudy data={cases} />} />*/}
     </Routes>
   );
 }

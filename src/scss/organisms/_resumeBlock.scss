@@ -1,0 +1,14 @@
+.resumeBlock {}
+
+.resume {
+  display: flex;
+  gap: 16px;
+  margin-top: 1.5rem;
+
+  &-2 {
+    width: 66.66%;
+  }
+  &-1 {
+    width: 33.333%;
+  }
+}

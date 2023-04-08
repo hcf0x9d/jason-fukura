@@ -1,0 +1,15 @@
+.socialList {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style-type: none;
+  padding: 0;
+
+  &-item {
+    & > a {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}

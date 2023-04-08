@@ -1,16 +1,17 @@
-// font-family: 'Italiana', serif;
-// font-family: 'Montserrat', sans-serif;
+// font-family: 'Inter', sans-serif;
 
 @import "utilities/definitions";
 @import "utilities/mixins";
 @import "utilities/base";
 @import "utilities/type";
 
-@import "atoms/pipedKeywords";
-@import "atoms/gradientSection";
-@import "atoms/introSection";
-@import "atoms/gallerySection";
-@import "atoms/footerSection";
+@import "organisms/header";
+@import "organisms/caseStudyBlock";
+@import "organisms/resumeBlock";
+@import "organisms/educationBlock";
+@import "organisms/contactBlock";
+@import "organisms/skillsList";
+@import "organisms/toolsList";
+@import "organisms/socialList";
 
-@import "atoms/caseStudyHeader";
-@import "atoms/screenshots";
+@import "organisms/caseStudy";

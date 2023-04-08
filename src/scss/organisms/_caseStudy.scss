@@ -1,0 +1,85 @@
+.caseStudyHeader {
+  margin-top: 2rem;
+  & .hero {
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+
+    & img {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+    }
+
+    & .logo {
+      padding: 0 0 3rem 3rem;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      width: 10rem;
+      height: 10rem;
+      background: $gray-1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & svg {
+        height: 10rem;
+      }
+    }
+  }
+
+  & .sectionHeader {
+    margin-bottom: 1rem;
+  }
+
+  & .heading-2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.caseArticle {
+  display: flex;
+  gap: 16px;
+}
+.pullQuote {
+  width: 40%;
+  order: 2;
+
+  & blockquote {
+    font-size: 1.618rem;
+    line-height: 1.3;
+  }
+}
+.articleBody {
+  width: 60%;
+  order: 1;
+  padding-right: 5rem;
+}
+
+.galleryList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+
+  &-item {
+    width: 33.333%;
+    position: relative;
+    overflow: hidden;
+
+    & a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    & img {
+      position: relative;
+      width: 100%;
+    }
+  }
+}
